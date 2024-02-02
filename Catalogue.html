@@ -7,90 +7,200 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #181818;
-            font-family: 'Libre Baskerville', serif;
-        }
-
-        #Navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #F9F9F9;
-            opacity: 0.85;
-            padding: 20px 0;
-            border-bottom: 3px solid rgb(0, 0, 0);
-            z-index: 1000;
-        }
-
-        .navbar-link {
-            color: #333333;
-            padding: 18px 35px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .navbar-link:hover {
-            color: rgb(129, 106, 111);
-        }
-
-        .navbar-link::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            height: 100%;
-            width: 3px;
-            background-color: rgb(129, 106, 111);
-            transform: translateY(-50%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .navbar-link:hover::before {
-            opacity: 1;
-        }
-
-        #fronttext {
-            text-align: center;
-            color: white;
-            margin-top: -40%;
-            font-size: 5vw; /* Use vw unit for font size */
-            animation: fadeIn 5s;
-            z-index: 2000;
-        }
-
-        /* Add other styles as needed */
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-    </style>
 </head>
 <body>
+    <style>
+         body {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        background-color: #181818;
+    }
 
-    <div id="Navbar">
-        <a class="navbar-link" href="index.html">Home</a>
-        <a class="navbar-link" href="About.html">About</a>
-        <a class="navbar-link" href="Characters.html">Characters</a>
-        <a class="navbar-link" href="Upcoming.html">Upcoming</a>
-    </div>
+    #Navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #F9F9F9;
+        opacity: 85%;
+        padding: 20px 0;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        z-index: 1000;
+    }
 
-    <img src="stiffy_shoots_apollo_sagitta_COLOURED.png" style="width: 100%;">
+    .navbar-link {
+        color: #333333;
+        padding: 18px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        transition: color 0.3s ease;
+    }
 
-    <div>
-        <h1 id="fronttext">Catalogue</h1>
-    </div>
+    .navbar-link:hover {
+        color: rgb(129, 106, 111);
+    }
+
+    .navbar-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 100%;
+        width: 3px;
+        background-color: rgb(129, 106, 111);
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar-link:hover::before {
+        opacity: 1;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+#fronttext {
+        text-align: center;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: -40%;
+        font-size: 65px;
+        animation: fadeIn 5s;
+        z-index: 2000;
+    }
+
+.slider .list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slider{
+    margin-top: 5%;
+    margin-left: 2.10%;
+}
+
+.slider .list .image{
+    overflow-x: auto;
+    height: 65%;
+    border-radius: 5px;
+}
+
+#origin{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 40%;
+        margin-left: 4%;
+        font-size: 55px;
+        z-index: 2000; 
+}
+
+#rewrites{
+    color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: -5%;
+        margin-left: 4%;
+        font-size: 55px;
+        z-index: 2000; 
+        position: flex;
+}
+
+#origin_subtext{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-weight: 350;
+    margin-left: 4%;
+}
+
+#rewrite_subtext{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 1%;
+    font-weight: 350;
+    margin-left: 4%;
+}
+
+#back,
+#front,
+#back2,
+#front2 {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px; /* Adjust border radius as needed */
+    padding: 1.5% 3%; /* Use percentage-based padding */
+    border: 0;
+    color: #fff;
+    background: #03045e;
+    line-height: 1.15;
+    font-size: 1.5vw; /* Use vw unit for font size */
+    margin-top: 2%; /* Adjust margin as needed */
+}
+
+#front,
+#front2 {
+    right: 0.15%;
+}
+
+#back2 {
+    left: 11.5%;
+}
+
+#front2 {
+    right: 12.5%;
+}
+
+.slider2 .list2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.slider2{
+    margin-top: 5%;
+    margin-left: 24.65%;
+}
+
+.slider2 .list2 .image2{
+    overflow-x: auto;
+    height: 65%;
+}
+
+.image{
+    border: solid 5px transparent;
+    border-radius: 8px;
+}
+
+.image:hover {
+    border-color: white;
+}
+
+.image2{
+    border: solid 5px transparent;
+    border-radius: 8px;
+}
+
+.image2:hover {
+    border-color: white;
+}
+
+@keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    </style>
 
     <div id="Navbar">
         <a class="navbar-link" href="index.html">Home</a>
