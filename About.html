@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(soft_bg.avif);
+        background-size: cover;
+    }
+
+    #Navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #F9F9F9;
+        opacity: 85%;
+        padding: 20px 0;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        z-index: 1000;
+    }
+
+    .navbar-link {
+        color: #333333;
+        padding: 18px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+        color: rgb(129, 106, 111);
+    }
+
+    .navbar-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 100%;
+        width: 3px;
+        background-color: rgb(129, 106, 111);
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar-link:hover::before {
+        opacity: 1;
+    }
+
+    
+#origin{
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 11%;
+        margin-left: 59%;
+        font-size: 55px;
+        z-index: 2000; 
+        display: block; 
+    
+}
+
+
+img {
+    height: 650px; 
+    margin-top: -10%;
+    border-radius: 8px;
+    margin-left: 2.5%;
+}
+
+#subtext{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    right: 3%;
+    top: 35%;
+}
+
+#bg{
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 8px;
+}
+</style>
+<body>
+      <div id="Navbar">
+        <a class="navbar-link" href="Untitled-1.html">Home</a>
+        <a class="navbar-link" href="Catalogue.html">Catalogue</a>
+        <a class="navbar-link" href="Characters.html">Characters</a>
+        <a class="navbar-link" href="Upcoming.html">Upcoming</a>
+    </div>
+
+     <div id="bg">  
+        <h1 id="origin">About Me</h1>
+
+        <img src="portrait.jpg">
+
+        <p id="subtext">
+            Richard Ma is the author of the Glen Long series. Currently 15,<br>
+            he started writing in middle school when he and a few of his friends went to Yorkdale Mall <br>
+            and got their friend Emmanuel a Jojo's t-shirt as a belated birthday gift.<br>
+            When they went to give it to him he told them to meet up at "Glen Long Park" hence the name but <br>
+            when he arrived on a scooter and started dueling Richard's friends Shahriar and Jake <br>
+            with sticks, Richard found it funny and recorded it. These events are what inspired the original <br>
+            the original Glen Long Saga.
+            <br><br>
+            The story was relatively popular in his friend group for a while, during this time he improved <br>
+            his art and introduced new characters such as Han, Stephanie, William, and Yazen. <br>
+            However, when he was about to end the series his friend Han gave him <br>
+            some heavy criticisms about the original stories which Richard took into account.<br>
+            Leading him to rewrite the entire story with significantly better art and writing.<br>
+            That brings us to today currently where he has completed volumes 1 and 2 and the first part <br>
+            of volume 3 of the rewrite. These new stories are considered his best works yet but that <br>
+            isn't the end of it as he strives to improve the story even further with the new upcoming<br>
+            second part of volume 3.
+        </p>
+        </div>
+</body>
+</html>

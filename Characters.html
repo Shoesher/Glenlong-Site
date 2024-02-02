@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+</head>
+<style>
+      body {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        background-color: #181818;
+    }
+
+    #Navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #F9F9F9;
+        opacity: 85%;
+        padding: 20px 0;
+        border-bottom: 3px solid rgb(0, 0, 0);
+        z-index: 1000;
+    }
+
+    .navbar-link {
+        color: #333333;
+        padding: 18px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-link:hover {
+        color: rgb(129, 106, 111);
+    }
+
+    .navbar-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 100%;
+        width: 3px;
+        background-color: rgb(129, 106, 111);
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .navbar-link:hover::before {
+        opacity: 1;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+#red{
+    height: 3px;
+    width: 18%;
+    position: absolute;
+    top: 32.25%;
+    left: 4.25%;
+}
+
+#origin{
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 12%;
+        margin-left: 4%;
+        font-size: 55px;
+        z-index: 2000; 
+}
+
+.slider .list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slider{
+    margin-top: 5%;
+    margin-left: 2.9%;
+}
+
+.slider .list .image{
+    overflow-x: auto;
+    width: 85%;
+    border-radius: 5px;
+}
+
+/* Seperate*/
+
+.slider2 .list2{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slider2{
+    margin-top: 5%;
+    margin-left: 2.9%;
+}
+
+.slider2 .list2 .image2{
+    overflow-x: auto;
+    width: 85%;
+    border-radius: 5px;
+}
+
+/* Seperate*/
+
+.slider3 .list3{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slider3{
+    margin-top: 5%;
+    margin-left: 2.9%;
+}
+
+.slider3 .list3 .image3{
+    overflow-x: auto;
+    width: 85%;
+    border-radius: 5px;
+}
+
+/* Seperate*/
+
+.slider4 .list4{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.slider4{
+    margin-top: 5%;
+    margin-left: 2.9%;
+}
+
+.slider4 .list4 .image4{
+    overflow-x: auto;
+    width: 85%;
+    border-radius: 5px;
+}
+/* Brightness */
+
+#stext1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-top: -92%;
+  margin-left: 66%;
+  z-index: 9999;
+  font-weight: 500;
+  opacity: 0%;
+}
+#stext2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  margin-top: -3.95%;
+  margin-left: 86%;
+  font-weight: 500;
+  opacity: 0%;
+}
+#stext3{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 24.5%;
+  margin-left: 46.5%;
+  opacity: 0%;
+}
+#stext4{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 24.5%;
+  margin-left: 7.5%;
+  opacity: 0%;
+}
+#stext5{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -3.8%;
+  margin-left: 27%;
+  opacity: 0%;
+}
+#stext6{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -3.8%;
+  margin-left: 46.5%;
+  opacity: 0%;
+}
+#stext7{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -3.8%;
+  margin-left: 86%;
+  opacity: 0%;
+}
+#stext8{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 27%;
+  margin-top: 24.5%;
+  opacity: 0%;
+}
+</style>
+<body>
+    <div id="Navbar">
+        <a class="navbar-link" href="Untitled-1.html">Home</a>
+        <a class="navbar-link" href="About.html">About</a>
+        <a class="navbar-link" href="Catalogue.html">Catalogue</a>
+        <a class="navbar-link" href="Upcoming.html">Upcoming</a>
+    </div>
+
+    <h1 id="origin">
+        Characters:
+    </h1>
+
+    <img src="red.png" id="red">  
+    
+<div class="slider">
+    <div class="list">
+      <a id="glennieLink" href="Aesculapius.html">
+          <img src="aesculapius.png" class="image" alt="Glen Image">
+        </a>
+        <a id="glennieLink2" href="Emmanuel.html">
+          <img src="Emmanuel.png" class="image" alt="Glen Image2">
+        </a>
+        <a id="glennieLink3" href="Garmr.html">
+          <img src="garmr.png" class="image" alt="Glen Image3">
+        </a>
+        <a id="glennieLink4" href="Han.html">
+          <img src="Han.png" class="image" id="spoiler1" alt="Glen Image4" onmouseover="spoiler1()" onmouseout="spoilerout1()">
+        </a>
+        <a id="glennieLink5" href="Hel.html">
+          <img src="Hel.png" class="image" id="spoiler2" alt="Glen Image5" onmouseover="spoiler2()" onmouseout="spoilerout2()">
+        </a>
+    </div>
+  </div>
+       
+  
+  <div class="slider2">
+    <div class="list2">
+      <a id="Link1" href="Jacob_I.html">
+          <img src="Jacob_i.png" class="image2" alt="Glen Image">
+        </a>
+        <a id="Link2" href="Og_Jake.html">
+          <img src="Jake_og.png" class="image2" alt="Glen Image2">
+        </a>
+        <a id="Link3" href="Jake.html">
+          <img src="Jake.png" class="image2" id="spoiler3" alt="Glen Image3" onmouseover="spoiler3()" onmouseout="spoilerout3()">
+        </a>
+        <a id="Link4" href="Jason.html">
+            <img src="jason_m.png" class="image2" alt="Glen Image4">
+          </a>
+          <a id="Link5" href="Lucy.html">
+            <img src="Lucy.png" class="image2" alt="Glen Image5">
+          </a>
+    </div>
+  </div> 
+
+  <div class="slider3">
+    <div class="list3">
+      <a id="Link1" href="Malcolm.html">
+          <img src="Malcolm.png" class="image3" id="spoiler4" alt="Glen Image" onmouseover="spoiler4()" onmouseout="spoilerout4()">
+        </a>
+        <a id="Link2" href="Mercury.html">
+          <img src="Mercury.png" class="image3" id="spoiler5" alt="Glen Image2" onmouseover="spoiler5()" onmouseout="spoilerout5()">
+        </a>
+        <a id="Link3" href="Odin.html">
+          <img src="Odin.png" class="image3" id="spoiler6" alt="Glen Image3" onmouseover="spoiler6()" onmouseout="spoilerout6()">
+        </a>
+        <a id="Link4" href="Richard.html">
+            <img src="Richard.png" class="image3" alt="Glen Image4">
+          </a>
+          <a id="Link5" href="Shahriar.html">
+            <img src="Shahriar.png" class="image3" id="spoiler7" alt="Glen Image5" onmouseover="spoiler7()" onmouseout="spoilerout7()">
+          </a>
+    </div>
+  </div> 
+
+  
+  <div class="slider4">
+    <div class="list4">
+      <a id="Link1" href="Stephanie.html">
+          <img src="Stiffy.png" class="image4" alt="Glen Image" >
+        </a>
+        <a id="Link2" href="Trivia.html">
+          <img src="Trivia.png" class="image4" id="spoiler8" alt="Glen Image2" onmouseover="spoiler8()" onmouseout="spoilerout8()">
+        </a>
+        <a id="Link4" href="Venus.html">
+            <img src="venus.png" class="image4" alt="Glen Image4">
+          </a>
+          <a id="Link5" href="William.html">
+            <img src="William.png" class="image4" alt="Glen Image5">
+          </a>
+          <a id="Link5" href="Yazen.html">
+            <img src="Yazen.png" class="image4" alt="Glen Image5">
+          </a>
+    </div>
+  </div> 
+
+  <p id="stext1">SPOILER</p>
+  <p id="stext2">SPOILER</p>
+  <p id="stext3">SPOILER</p>
+  <p id="stext4">SPOILER</p>
+  <p id="stext5">SPOILER</p>
+  <p id="stext6">SPOILER</p>
+  <p id="stext7">SPOILER</p>
+  <p id="stext8">SPOILER</p>
+
+  <script>
+    //Han
+    function spoiler1() {
+  document.getElementById("stext1").style.opacity = "1";
+  document.getElementById("spoiler1").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout1() {
+  document.getElementById("stext1").style.opacity = "0";
+  document.getElementById("spoiler1").style.opacity = "1";
+}
+//Hel
+function spoiler2() {
+  document.getElementById("stext2").style.opacity = "1";
+  document.getElementById("spoiler2").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout2() {
+  document.getElementById("stext2").style.opacity = "0";
+  document.getElementById("spoiler2").style.opacity = "1";
+}
+//Jake
+function spoiler3() {
+  document.getElementById("stext3").style.opacity = "1";
+  document.getElementById("spoiler3").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout3() {
+  document.getElementById("stext3").style.opacity = "0";
+  document.getElementById("spoiler3").style.opacity = "1";
+}
+//malcolm
+function spoiler4() {
+  document.getElementById("stext4").style.opacity = "1";
+  document.getElementById("spoiler4").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout4() {
+  document.getElementById("stext4").style.opacity = "0";
+  document.getElementById("spoiler4").style.opacity = "1";
+}
+//mercury
+function spoiler5() {
+  document.getElementById("stext5").style.opacity = "1";
+  document.getElementById("spoiler5").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout5() {
+  document.getElementById("stext5").style.opacity = "0";
+  document.getElementById("spoiler5").style.opacity = "1";
+}
+//odin
+function spoiler6() {
+  document.getElementById("stext6").style.opacity = "1";
+  document.getElementById("spoiler6").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout6() {
+  document.getElementById("stext6").style.opacity = "0";
+  document.getElementById("spoiler6").style.opacity = "1";
+}
+//Shahriar
+function spoiler7() {
+  document.getElementById("stext7").style.opacity = "1";
+  document.getElementById("spoiler7").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout7() {
+  document.getElementById("stext7").style.opacity = "0";
+  document.getElementById("spoiler7").style.opacity = "1";
+}
+//Trivia
+function spoiler8() {
+  document.getElementById("stext8").style.opacity = "1";
+  document.getElementById("spoiler8").style.opacity = "0.2"; // Adjust opacity as needed
+}
+
+function spoilerout8() {
+  document.getElementById("stext8").style.opacity = "0";
+  document.getElementById("spoiler8").style.opacity = "1";
+}
+  </script>
+
+</body>
+</html>
