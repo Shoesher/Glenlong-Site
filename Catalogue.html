@@ -210,8 +210,74 @@ button {
         100% { opacity: 1; }
     }
 
-@media screen and (min-width: 915px) {
-      #back {
+
+    @media screen and (max-width: 915px) {
+        #back,
+        #front,
+        #back2,
+        #front2 {
+            top: 15vh; /* Adjust as needed */
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        #back,
+        #front {
+            top: 250vh; /* Adjust as needed */
+        }
+
+        #back2,
+        #front2 {
+            top: 265vh; /* Adjust as needed */
+        }
+    }
+
+    .slider2 .list2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+    }
+
+    .slider2 {
+        margin-top: 5%;
+        margin-left: 24.65%;
+    }
+
+    .slider2 .list2 .image2 {
+        overflow-x: auto;
+        height: 65%;
+    }
+
+    .image {
+        border: solid 5px transparent;
+        border-radius: 8px;
+    }
+
+    .image:hover {
+        border-color: white;
+    }
+
+    .image2 {
+        border: solid 5px transparent;
+        border-radius: 8px;
+    }
+
+    .image2:hover {
+        border-color: white;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media screen and (min-width: 915px) {
+        #back {
             left: 5vw; /* Adjust as needed */
             top: 175vh; /* Adjust as needed */
         }
@@ -230,8 +296,41 @@ button {
             right: 5vw; /* Adjust as needed */
             top: 265vh; /* Adjust as needed */
         }
+    }
 
-}
+        @media screen and (min-width: 1200px) {
+        #back,
+        #front {
+            top: 250vh; /* Adjust as needed */
+        }
+
+        #back2,
+        #front2 {
+            top: 265vh; /* Adjust as needed */
+        }
+    }
+
+    @media screen and (min-width: 915px) {
+        #back {
+            left: 5vw; /* Adjust as needed */
+            top: 175vh; /* Adjust as needed */
+        }
+
+        #front {
+            right: 5vw; /* Adjust as needed */
+            top: 175vh; /* Adjust as needed */
+        }
+
+        #back2 {
+            left: 5vw; /* Adjust as needed */
+            top: 265vh; /* Adjust as needed */
+        }
+
+        #front2 {
+            right: 5vw; /* Adjust as needed */
+            top: 265vh; /* Adjust as needed */
+        }
+    }
 
     </style>
 
