@@ -130,43 +130,29 @@
     margin-left: 4%;
 }
 
-#back,
-#front,
-#back2,
-#front2 {
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 3px 5px;
-    border: 0;
-    color: #fff;
-    background: #03045e;
-    line-height: 1.15;
-    font-size: 1.6vw; /* Use vw unit for font size */
-}
-
-#back {
-    top: 195%;
-    left: 0;
-}
-
-#front {
-    top: 195%;
-    right: 1%;
-}
-
-#back2 {
-    top: 285%;
-    left: 0;
-}
-
-#front2 {
-    top: 285%;
-    right: 1%;
-}
+   /* Add this style for container */
+      
+        /* Updated styles for buttons */
+        #back,
+        #front,
+        #back2,
+        #front2 {
+            position: absolute;
+            display: inline-block;
+            outline: none;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 3px 5px;
+            border: 0;
+            color: #fff;
+            background: #03045e;
+            line-height: 1.15;
+            font-size: 1.6vw; /* Use vw unit for font size */
+            top: 100%; /* Adjust as needed */
+            width: 50px; /* Adjust as needed */
+            margin: 0 auto; /* Center horizontally within the container */
+        }
 
 
 .slider2 .list2{
@@ -250,6 +236,8 @@
         <img src="downsviewpark_pt2.png" class="image" id="glennie5" alt="Glen Image5">
       </a>
   </div>
+    <button onclick="changeback()" id="back">&lt;</button>
+    <button onclick="changeimage()" id="front">&gt;</button>
 </div>
 
 <h1 id="rewrites">
@@ -275,6 +263,8 @@
           <img src="vol3.png" class="image2" id="jake3" alt="Glen Image4">
         </a>
     </div>
+     <button onclick="changeback2()" id="back2">&lt;</button>
+        <button onclick="changeimage2()" id="front2">&gt;</button>
   </div>        
 
 <button onclick="changeimage()" id="front">&gt;</button>
