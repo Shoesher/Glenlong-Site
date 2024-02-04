@@ -133,10 +133,7 @@
    /* Add this style for container */
       
         /* Updated styles for buttons */
-        #back,
-        #front,
-        #back2,
-        #front2 {
+     #back #front #back2 #front2 {
             position: absolute;
             display: inline-block;
             outline: none;
@@ -149,9 +146,28 @@
             background: #03045e;
             line-height: 1.15;
             font-size: 1.6vw; /* Use vw unit for font size */
-            top: 100%; /* Adjust as needed */
             width: 50px; /* Adjust as needed */
-            margin: 0 auto; /* Center horizontally within the container */
+            margin: 0; /* Remove auto margin */
+        }
+
+        #back {
+            top: 100%;
+            left: 0;
+        }
+
+        #front {
+            top: 100%;
+            right: 0;
+        }
+
+        #back2 {
+            top: 100%;
+            left: 0;
+        }
+
+        #front2 {
+            top: 100%;
+            right: 0;
         }
 
 
@@ -235,9 +251,9 @@
       <a id="glennieLink5" href="https://docs.google.com/document/d/1PjK74a-pMzp3ABh6RyEKsWgwjL9tKNUuUI0jKKD_LZw/edit" target="_blank">
         <img src="downsviewpark_pt2.png" class="image" id="glennie5" alt="Glen Image5">
       </a>
-  </div>
-    <button onclick="changeback()" id="back">&lt;</button>
+      <button onclick="changeback()" id="back">&lt;</button>
     <button onclick="changeimage()" id="front">&gt;</button>
+  </div>
 </div>
 
 <h1 id="rewrites">
@@ -262,9 +278,9 @@
         <a id="Link3" href="https://docs.google.com/document/d/1uZCpEmeIwsvn5STKrJIWqbMjk-LHlMBOwJJcDIjX9cw/edit" target="_blank">
           <img src="vol3.png" class="image2" id="jake3" alt="Glen Image4">
         </a>
-    </div>
-     <button onclick="changeback2()" id="back2">&lt;</button>
+          <button onclick="changeback2()" id="back2">&lt;</button>
         <button onclick="changeimage2()" id="front2">&gt;</button>
+    </div>
   </div>        
 
 <button onclick="changeimage()" id="front">&gt;</button>
